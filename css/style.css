@@ -1,0 +1,25 @@
+    :root {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      display: flex;
+      border: solid;
+      justify-content: center;
+    }
+    .container ,
+    .col ,
+    .colItem {
+      margin: 0;
+      padding: 0;
+     }
+
+    .colItem {
+      min-width: 5px;
+      min-height: 5px;
+      max-height: 5px;
+      max-width: 5px;
+      /* border: solid; */
+      /* margin: 5px; */
+    }
