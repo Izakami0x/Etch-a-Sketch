@@ -1,25 +1,29 @@
 
 const container = document.querySelector(".container");
 
-const row = 16;
-const col = 16;
+let deafultGridSize = 16;
 
 
-function createGrid(rowItems,colItems){
-  for (let i = 0; i < rowItems; i++) {
+
+function createGrid(x){
+  for (let i = 0; i < x; i++) {
     const collumn = document.createElement("div");
     collumn.classList.add("col");
     container.appendChild(collumn);
-    console.log("aa")
-    if (i !== rowItems);{
-      for (let a = 0; a < colItems; a++){
+    console.log("rowItems" + i);
+    // console.log("aa")
+    if (i !== x) {
+      for (let a = 0; a < x; a++){
         const item = document.createElement("div")
-        item.classList.add("colItem");
+        item.classList.add(`item`);
         collumn.appendChild(item);
+        // console.log("colItems" + a);
+
       }
 
     }
 
   }
 }
-createGrid(row,col);
+createGrid(deafultGridSize);
+// console.log(deafultGridSize);

@@ -2,12 +2,26 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      /* --main-bg-color: pink;
+      --color-0 : */
     }
     .container{
       display: flex;
       border: solid;
       justify-content: center;
+      align-items: center;
+      border: solid gray;
+
     }
+
+    .wrapper{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      /* align-items: center; */
+    }
+
+
     .container ,
     .col ,
     .colItem {
@@ -15,11 +29,18 @@
       padding: 0;
      }
 
-    .colItem {
-      min-width: 5px;
-      min-height: 5px;
-      max-height: 5px;
-      max-width: 5px;
-      /* border: solid; */
+    .item {
+      min-width: 34px;
+      min-height: 34px;
+      max-height: 34px;
+      max-width: 34px;
+      border: solid;
       /* margin: 5px; */
+
     }
+button {
+  font-size: 0.6rem;
+  width: 7em;
+  height: 3em;
+}
+
